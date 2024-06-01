@@ -13,7 +13,7 @@ var clear_btn = document.getElementById("clear_chat");
 var online_div = document.getElementById("onlineusers");
 
 // Initialize the WebSocket connection
-mywebsocket = new WebSocket("ws://localhost:8081");
+mywebsocket = new WebSocket("ws://localhost:8082");
 
 console.log(mywebsocket);
 mywebsocket.onopen = function () {

@@ -14,7 +14,7 @@ app.use(express.static('public'));
 wss.on('connection', (ws) => {
     console.log('New client connected');
 
-    
+
     ws.on('message', (message) => {
         let msg_content = JSON.parse(message);
         if (msg_content.login) {
@@ -59,6 +59,6 @@ const broadcast = (data) => {
 };
 
 // Start the server
-server.listen(8081, () => {
-    console.log(`Server is listening on port 8081`);
+server.listen(8082, () => {
+    console.log(`Server is listening on port 8082`);
 });
